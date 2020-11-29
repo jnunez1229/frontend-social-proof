@@ -1,9 +1,11 @@
+
 body{
     font-family: 'Spartan', sans-serif;
     margin: 5em 1.7em;
-    background-image: url(images/bg-pattern-top-mobile.svg);
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
     background-position-x: center;
     background-repeat: no-repeat;
+    background-position: left top, right bottom;
     
   }
   
@@ -78,20 +80,22 @@ body{
     font-size: .9em;
   }
     
-  /* background-image: url(images/bg-pattern-top-mobile.svg); */
+  
   .attribution {
-      font-size: 11px;
-      text-align: center;
+    font-size: 11px;
+    text-align: center;
     }
   .attribution a {
-      color: hsl(228, 45%, 44%);
+    color: hsl(228, 45%, 44%);
     }
   
   
-  @media  (min-width: 768px){
+@media  (min-width: 768px){
 
     body{
         margin: 5em 5em;
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-position: left top, right bottom;
     }
     /* Heading */
 
@@ -151,5 +155,10 @@ body{
     .test-3{
         position: relative;
         top: 2em;
+    }
+
+    .attribution{
+        position: relative;
+        top: 50px;
     }
   }
